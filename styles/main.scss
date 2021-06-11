@@ -4,6 +4,10 @@ body {
     font-family: "canto", serif;
     font-size: 16px;
     background: #fff;
+    margin: 0;
+}
+textarea {
+    resize: none;
 }
 
 /******************header*****************/
@@ -71,6 +75,15 @@ body {
     max-width: 1091px;
     width: 100%;
     margin: 0 auto;
+    &__description {
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        color: #474747;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: left;
+    }
     &__budget {
         display: flex;
         flex-direction: column;
@@ -103,6 +116,7 @@ body {
         }
     }
     &__data {
+        margin-top: 35px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1091px;
@@ -116,6 +130,7 @@ body {
             color: #424242;
             font-weight: 300;
             font-family: "Roboto";
+            margin-bottom: 10px;
         }
         &--input {
             height: 36px;
@@ -141,6 +156,9 @@ body {
         }
     }
     &__file {
+        &--form {
+            display: flex;
+        }
         &--button {
             max-width: 150px;
             width: 100%;
@@ -158,6 +176,10 @@ body {
             color: #424242;
             font-weight: 300;
             font-family: "Roboto";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 25px;
         }
     }
     &__message {
@@ -177,6 +199,7 @@ body {
     }
     &__permission {
         margin-top: 30px;
+        margin-bottom: 25px;
         &--label {
             font-size: 13px;
             color: #424242;
@@ -221,5 +244,40 @@ body {
     }
     &__item {
         color: #424242;
+    }
+}
+/*********************************footer*****************************************/
+.footer {
+    margin-top: 100px;
+    background: #434343;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__copyright--text {
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Roboto";
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        &--link {
+            text-decoration: none;
+            font-size: 15px;
+            color: #ffffff;
+            font-weight: 300;
+            font-family: "Roboto";
+            padding: 0 10px;
+            &:hover {
+                color: #29b4c9;
+            }
+        }
+        &--line {
+            border-right: 1px solid #fff;
+            height: fit-content;
+        }
     }
 }
