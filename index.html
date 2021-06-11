@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ODP GROUP</title>
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 
 <body>
     <header class="header">
         <div class="header__company">
-            <p class="header__company--name"></p>
+            <p class="header__company--name">ODP GROUP</p>
         </div>
         <div class="header__navigation">
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__list--item">
-                        <a href="">Home</a>
+                        <a class="nav__list--link" href="./index.html">Home</a>
                     </li>
                     <li class="nav__list--item">
-                        <a href="">Gallery</a>
+                        <a class="nav__list--link" href="./gallery.html">Gallery</a>
                     </li>
                     <li class="nav__list--item">
-                        <a href="">Price Examples</a>
+                        <a class="nav__list--link" href="./priceExamples.html">Price Examples</a>
                     </li>
                     <li class="nav__list--item">
-                        <a href="">Bitcoin</a>
+                        <a class="nav__list--link" href="#">Bitcoin</a>
                     </li>
                     <li class="nav__list--item">
-                        <a href="">Contact us</a>
+                        <a class="nav__list--link" href="./contact.html">Contact us</a>
                     </li>
                 </ul>
             </nav>
@@ -70,22 +70,12 @@
             the top of the page.</p>
     </section>
     <section class="contact">
-        <h2 class="contact__headeer"></h2>
+        <h2 class="contact__title">Get a Quote Now – Tell Us What You Need!</h2>
         <div class="contact__form">
-            <div class="contact__select">
-                <div class="select">
-                    <label for="location" class="select__label"></label>
-                    <select name="location" class="select__list" id="select">
-                        <option class="select__item" value="">--Please choose an option--</option>
-                        <option class="select__item" value="Hampshire">Hampshire</option>
-                        <option class="select__item" value="Surrey">Surrey</option>
-                        <option class="select__item" value="Kent">Kent</option>
-                        <option class="select__item" value="West Sussex">West Sussex</option>
-                        <option class="select__item" value="Est Sussex">Est Sussex</option>
-                    </select>
-
+            <div class="contact__form--row">
+                <div class="contact__select">
                     <div class="select">
-                        <label for="location" class="select__label"></label>
+                        <label for="location" class="select__label">Location: *</label>
                         <select name="location" class="select__list" id="select">
                             <option class="select__item" value="">--Please choose an option--</option>
                             <option class="select__item" value="Hampshire">Hampshire</option>
@@ -94,73 +84,106 @@
                             <option class="select__item" value="West Sussex">West Sussex</option>
                             <option class="select__item" value="Est Sussex">Est Sussex</option>
                         </select>
+
+                        <div class="select">
+                            <label for="location" class="select__label">Sector: *</label>
+                            <select name="location" class="select__list" id="select">
+                                <option class="select__item" value="">--Please choose an option--</option>
+                                <option class="select__item" value="Hampshire">Hampshire</option>
+                                <option class="select__item" value="Surrey">Surrey</option>
+                                <option class="select__item" value="Kent">Kent</option>
+                                <option class="select__item" value="West Sussex">West Sussex</option>
+                                <option class="select__item" value="Est Sussex">Est Sussex</option>
+                            </select>
+                        </div>
+
                     </div>
-
                 </div>
-
+                <div class="contact__message">
+                    <label class="contact__message--label" for="message">Describe what you need asiststance with few
+                        words: * </label>
+                    <textarea class="contact__message--textarea" name="message" id="message" cols="30"
+                        rows="4"></textarea>
+                </div>
+            </div>
+            <div class="contact__form--row">
                 <div class="contact__budget">
                     <p class="contact__budget--title">Budget (Optional): <br />
                         Help us provide a more taylored quote. </p>
                     <div class="contact__budget--radio">
                         <div class="contact__budget--item">
-                            <input type="radio" id="budget" name="price" value="trade" checked>
-                            <label for="butget">Trade</label>
+                            <input class="contact__budget--input" type="radio" id="budget" name="price" value="trade"
+                                checked>
+                            <label class="contact__budget--label" for="butget">Trade</label>
                         </div>
                         <div class="contact__budget--item">
-                            <input type="radio" id="budget" name="price" value="cost_effective" checked>
-                            <label for="butget">Cost Effective</label>
+                            <input class="contact__budget--input" type="radio" id="budget" name="price"
+                                value="cost_effective" checked>
+                            <label class="contact__budget--label" for="butget">Cost Effective</label>
                         </div>
                         <div class="contact__budget--item">
-                            <input type="radio" id="budget" name="price" value="mid_Range" checked>
-                            <label for="butget">Mid Range</label>
+                            <input class="contact__budget--input" type="radio" id="budget" name="price"
+                                value="mid_Range" checked>
+                            <label class="contact__budget--label" for="butget">Mid Range</label>
                         </div>
                         <div class="contact__budget--item">
-                            <input type="radio" id="budget" name="price" value="high_end" checked>
-                            <label for="butget">High End</label>
+                            <input class="contact__budget--input" type="radio" id="budget" name="price" value="high_end"
+                                checked>
+                            <label class="contact__budget--label" for="butget">High End</label>
                         </div>
                     </div>
-
-                </div>
-                <div class="contact__message">
-                    <label for="message">Describe what you need asiststance with few words: * </label>
-                    <textarea name="message" id="message" cols="30" rows="4"></textarea>
                 </div>
                 <div class="contact__file">
                     <p class="contact__file--title">Images of task or query:</p>
-                    <form name="uploadForm">
-                        <div>
-                            <input id="uploadInput" type="file" name="myFiles" multiple>
-                            selected files: <span id="fileNum">0</span>;
+                    <form name="uploadForm" class="contact__file--form">
+                        <label for="uploadInput" class="contact__file--label">Drop files here or </label>
+                        <!-- <div>
+
+                            <input id="uploadInput" class="contact__file--button contact__file--upload" type="file"
+                                value="Select file" name="myFiles" multiple>
                             total size: <span id="fileSize">0</span>
+                        </div> -->
+                        <div><input type="submit" class="contact__file--button contact__file--send" value="Send files">
                         </div>
-                        <div><input type="submit" value="Send file"></div>
                     </form>
-                </div>
-                <div class="contact__data">
-                    <div class="contact__data--name">
-                        <label for="full_name" class="contact__data--label">Full name:</label>
-                        <input type="text" name="from_name" id="full_name">
-                    </div>
-                    <div class="contact__data--email">
-                        <label for="email" class="contact__data--label">Your email:</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="contact__data--phone">
-                        <label for="phone" class="contact__data--label">Full name:</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                </div>
-                <div class="contact__permission">
-                    <input type="checkbox" id="permission" name="agree" class="contact__permission--input">
-                    <label class="contact__permission--label" for="permission">I have read and agree to the <a href="#"
-                            class="contact__permission--link">terms and conditions</a></label>
-                </div>
-                <div class="contact__submit">
-                    <button type="submit" class="contact__submit--button">Submit</button>
                 </div>
             </div>
 
-            <p class="contact__description"></p>
+
+            <div class="contact__data">
+                <div class="contact__data--item contact__data--name">
+                    <label for="full_name" class="contact__data--label">Full name:</label>
+                    <input type="text" class="contact__data--input" name="from_name" id="full_name">
+                </div>
+                <div class="contact__data--item contact__data--email">
+                    <label for="email" class="contact__data--label">Your email:</label>
+                    <input type="email" class="contact__data--input" name="email" id="email">
+                </div>
+                <div class="contact__data--item contact__data--phone">
+                    <label for="phone" class="contact__data--label">Full name:</label>
+                    <input type="tel" class="contact__data--input" name="phone" id="phone">
+                </div>
+            </div>
+            <div class="contact__permission">
+                <input type="checkbox" id="permission" name="agree" class="contact__permission--input">
+                <label class="contact__permission--label" for="permission">I have read and agree to the <a href="#"
+                        class="contact__permission--link">terms and conditions</a></label>
+            </div>
+            <div class="contact__submit">
+                <button type="submit" class="contact__submit--button">Submit</button>
+            </div>
+        </div>
+
+        <p class="contact__description">Please feel free to request third party testimonials in any sector your
+            interested in, chances are we’ll have countless happy clients in that very area to inform of our service.
+            Our policy is to reply to any request within 24hours (maximum 72h if being provided back an estimate). If
+            unfortunately all of our partners are to busy to assist we do sincerely apologise and will do our best to
+            advise you on different routes to take. One of our main philosophies though is quality over quantity, over
+            stretching our network will have a real adverse effect on what we are tying to achieve within the platforms
+            community so will be avoided at all costs. As the network grows so will our capacity to source more partners
+            and except more requests. In the mean time please enjoy the site and if your lucky enough to be introduced
+            to one of our partners we cant wait to hear the feed back. Thank you.
+        </p>
 
     </section>
     <footer class="footer">
@@ -170,11 +193,11 @@
         <div>
             <nav>
                 <ul class="footer__list">
-                    <li class="footer__list--item">
-                        <a class="footer__list--link" href=""> Terms of Conditions </a>
+                    <li class="footer__list--item ">
+                        <a class="footer__list--link footer__list--line" href=""> Terms of Conditions </a>
                     </li>
-                    <li class="footer__list--item">
-                        <a class="footer__list--link" href="">Privacy Policy</a>
+                    <li class="footer__list--item ">
+                        <a class="footer__list--link footer__list--line" href="">Privacy Policy</a>
                     </li>
                     <li class="footer__list--item">
                         <a class="footer__list--link" href="">Contact</a>
@@ -187,6 +210,7 @@
 
 
     <script src="index.js"></script>
+
 </body>
 
 </html>
