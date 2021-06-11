@@ -1,5 +1,44 @@
-.hello {
-    .world {
-        color: hotpink
+@import url("https://use.typekit.net/kww5wvv.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: "canto",serif;
+    font-size: 16px;
+    background: #fff;
+}
+/******************header*****************/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__company--name{
+        font-size: 36px;
+color: #616161;
+font-weight: 300;
+        padding: 30px 0 20px 0;
+        margin: 0;
     }
+
+}
+.nav{
+    &__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    &--item{
+        padding: 0 15px;
+    }
+    &--link{
+     text-decoration: none;
+     font-family: 'Roboto', sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     color: #9f9f9f;
+     font-weight: 200;
+     &:hover {
+        font-weight: 300;
+        color:#3c3c3c;
+     }
+    }
+}
+
 }
