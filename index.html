@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,185 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
+
 <body>
-    <div class="hello">
-        <span class="world">hello world</span>
-    </div>
-    <img src="assets/img/ODP-building-serv-contact.jpg" alt="hello"/>
+    <header class="header">
+        <div class="header__company">
+            <p class="header__company--name"></p>
+        </div>
+        <div class="header__navigation">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list--item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="">Gallery</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="">Price Examples</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="">Bitcoin</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner__logo">
+            <img src="" alt="" />
+        </div>
+        <div class="banner-main">
+            <img src="" alt="" />
+        </div>
+        <div class="banner__home">
+            <nav>
+                <ul class="banner__list">
+                    <li class="banner__list--item">
+                        <a class="banner__list--item banner__list--link" href=""><img src="" alt=""> </a>
+                    </li>
+                    <li class="banner__list--item">
+                        <a class="banner__list--item banner__list--link" href="">ODP Group</a>
+                    </li>
+                    <li class="banner__list--item">
+                        <a class="banner__list--item banner__list--link" href="">About odp</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </section>
+    <section class="text">
+        <h1 class="text__title">About ODP Building and Services</h1>
+        <p class="text__description">Think of us as a professional fixer, we source the exceptional out of the bunch and
+            let the end product do the talking. Our knowledge and service is tried and tested thousands of times over by
+            our current privet clients, now its time to share it with the world. Whether you're a company looking to
+            recruit for a particular position or a member of the public looking for a trusted service provider, please
+            use our platform for anything big or small. Details on guarantees and how the site works are in “details” at
+            the top of the page.</p>
+    </section>
+    <section class="contact">
+        <h2 class="contact__headeer"></h2>
+        <div class="contact__form">
+            <div class="contact__select">
+                <div class="select">
+                    <label for="location" class="select__label"></label>
+                    <select name="location" class="select__list" id="select">
+                        <option class="select__item" value="">--Please choose an option--</option>
+                        <option class="select__item" value="Hampshire">Hampshire</option>
+                        <option class="select__item" value="Surrey">Surrey</option>
+                        <option class="select__item" value="Kent">Kent</option>
+                        <option class="select__item" value="West Sussex">West Sussex</option>
+                        <option class="select__item" value="Est Sussex">Est Sussex</option>
+                    </select>
+
+                    <div class="select">
+                        <label for="location" class="select__label"></label>
+                        <select name="location" class="select__list" id="select">
+                            <option class="select__item" value="">--Please choose an option--</option>
+                            <option class="select__item" value="Hampshire">Hampshire</option>
+                            <option class="select__item" value="Surrey">Surrey</option>
+                            <option class="select__item" value="Kent">Kent</option>
+                            <option class="select__item" value="West Sussex">West Sussex</option>
+                            <option class="select__item" value="Est Sussex">Est Sussex</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="contact__budget">
+                    <p class="contact__budget--title">Budget (Optional): <br />
+                        Help us provide a more taylored quote. </p>
+                    <div class="contact__budget--radio">
+                        <div class="contact__budget--item">
+                            <input type="radio" id="budget" name="price" value="trade" checked>
+                            <label for="butget">Trade</label>
+                        </div>
+                        <div class="contact__budget--item">
+                            <input type="radio" id="budget" name="price" value="cost_effective" checked>
+                            <label for="butget">Cost Effective</label>
+                        </div>
+                        <div class="contact__budget--item">
+                            <input type="radio" id="budget" name="price" value="mid_Range" checked>
+                            <label for="butget">Mid Range</label>
+                        </div>
+                        <div class="contact__budget--item">
+                            <input type="radio" id="budget" name="price" value="high_end" checked>
+                            <label for="butget">High End</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact__message">
+                    <label for="message">Describe what you need asiststance with few words: * </label>
+                    <textarea name="message" id="message" cols="30" rows="4"></textarea>
+                </div>
+                <div class="contact__file">
+                    <p class="contact__file--title">Images of task or query:</p>
+                    <form name="uploadForm">
+                        <div>
+                            <input id="uploadInput" type="file" name="myFiles" multiple>
+                            selected files: <span id="fileNum">0</span>;
+                            total size: <span id="fileSize">0</span>
+                        </div>
+                        <div><input type="submit" value="Send file"></div>
+                    </form>
+                </div>
+                <div class="contact__data">
+                    <div class="contact__data--name">
+                        <label for="full_name" class="contact__data--label">Full name:</label>
+                        <input type="text" name="from_name" id="full_name">
+                    </div>
+                    <div class="contact__data--email">
+                        <label for="email" class="contact__data--label">Your email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact__data--phone">
+                        <label for="phone" class="contact__data--label">Full name:</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="contact__permission">
+                    <input type="checkbox" id="permission" name="agree" class="contact__permission--input">
+                    <label class="contact__permission--label" for="permission">I have read and agree to the <a href="#"
+                            class="contact__permission--link">terms and conditions</a></label>
+                </div>
+                <div class="contact__submit">
+                    <button type="submit" class="contact__submit--button">Submit</button>
+                </div>
+            </div>
+
+            <p class="contact__description"></p>
+
+    </section>
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p class="footer__copyright--text">© 2021 ODP Group - ALL RIGHTS RESERVED</p>
+        </div>
+        <div>
+            <nav>
+                <ul class="footer__list">
+                    <li class="footer__list--item">
+                        <a class="footer__list--link" href=""> Terms of Conditions </a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a class="footer__list--link" href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a class="footer__list--link" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+
     <script src="index.js"></script>
 </body>
+
 </html>
