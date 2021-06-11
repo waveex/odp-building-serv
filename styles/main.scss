@@ -42,3 +42,28 @@ font-weight: 300;
 }
 
 }
+/**********************text section************************************/
+.text {
+    max-width: 825px;
+    width: 100%;
+    margin: 0 auto;
+    &__title{
+        font-size: 36px;
+color: #424242;
+font-weight: 300;
+font-family: "Canto";
+text-align: center;
+    }
+    &__description{
+        width: 750px;
+height: 128px;
+font-size: 15px;
+letter-spacing: 0px;
+line-height: 24px;
+color: #474747;
+font-weight: 300;
+font-family: "Roboto";
+text-align: center;
+    }
+}
+/**********************form************************************************/
