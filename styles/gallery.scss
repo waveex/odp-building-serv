@@ -22,7 +22,7 @@
             z-index: 2;
         }
     }
-    &__descryption {
+    &__description {
         margin-top: 20px;
         height: 23px;
         font-size: 15px;
@@ -41,6 +41,7 @@
             width: 139%;
             position: relative;
             left: -130px;
+            margin-top: 32px;
         }
     }
     &__input {
@@ -99,4 +100,23 @@
         z-index: 10;
         cursor: default;
     }
+}
+.footer {
+    margin-top: 150px;
+}
+.more {
+    display: flex;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 115px;
+}
+.compare__loadMore {
+    width: 183px;
+    height: 49px;
+    background-color: #ffffff;
+    border: 1px solid #a0a0a0;
+    color: #a0a0a0;
 }
