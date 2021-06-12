@@ -1,0 +1,116 @@
+.banner {
+    &__main {
+        background: url(../assets/img/projects-gallery/gallery_slider.png) no-repeat 50% 0;
+        height: 183px;
+    }
+}
+
+.text-content {
+    max-width: 1091px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        color: #424242;
+        font-weight: 300;
+        font-family: "Canto";
+        filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+    }
+    &__description {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        color: #474747;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: left;
+    }
+}
+.gallery {
+    max-width: 1649px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        color: #424242;
+        font-weight: 300;
+        font-family: "Canto";
+        filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+    }
+    &__image:hover {
+        filter: greyscale(100%);
+        transform: scale(1.1);
+    }
+}
+
+.parallax {
+    margin-top: 60px;
+    max-width: 1920px;
+    width: 100%;
+    background: url(../assets/img/projects-gallery/gallery_slider_bottom.png);
+    min-height: 334px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+        margin-top: 75px;
+        font-size: 36px;
+        color: #fefefe;
+        font-weight: 300;
+        font-family: "Canto";
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    &__description {
+        font-size: 16px;
+        color: #fefefe;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+    &__button {
+        width: 183px;
+        height: 50px;
+        font-size: 21px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: center;
+        text-decoration: none;
+        background: #29b4c9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.projects {
+    max-width: 1091px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        color: #424242;
+        font-weight: 300;
+        font-family: "Canto";
+        filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+        width: 100%;
+        border-bottom: 1px solid #4242423b;
+    }
+    &__images {
+        &--img {
+            margin-right: 35px;
+        }
+    }
+}
+
+.text {
+    top: -231px;
+    margin-bottom: -201px;
+    min-height: 77px;
+    &__title {
+        padding-top: 35px;
+    }
+}

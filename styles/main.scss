@@ -5,21 +5,59 @@ body {
     font-size: 16px;
     background: #fff;
     margin: 0;
+    max-width: 1920px;
+    width: 100%;
 }
 textarea {
     resize: none;
 }
 
 /******************header*****************/
+.banner {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    &__main {
+        max-width: 1648px;
+        width: 100%;
+        background: url(../assets/img/main/home.png) no-repeat 50% 0;
+        background-size: cover;
+        height: 366px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--text {
+            font-size: 62px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: "Canto";
+            text-align: right;
+            text-transform: uppercase;
+            margin-top: -7px;
+        }
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    &__logo {
+        margin: 35px 20px;
+    }
+}
 .header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 1px solid #d7d7d7;
     &__company--name {
         font-size: 36px;
         color: #616161;
         font-weight: 300;
-        padding: 30px 0 20px 0;
+        padding: 25px 0 0 0;
         margin: 0;
     }
 }
@@ -38,6 +76,7 @@ textarea {
             line-height: 24px;
             color: #9f9f9f;
             font-weight: 200;
+            text-transform: uppercase;
             &:hover {
                 font-weight: 300;
                 color: #3c3c3c;
@@ -50,12 +89,29 @@ textarea {
     max-width: 825px;
     width: 100%;
     margin: 0 auto;
+    background: #fff;
+    position: relative;
+    top: -130px;
+    margin-bottom: -130px;
+    min-height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &__title {
         font-size: 36px;
         color: #424242;
         font-weight: 300;
         font-family: "Canto";
         text-align: center;
+        margin-bottom: 0;
+        &::after {
+            display: block;
+            content: "";
+            height: 1px;
+            background: #4242423b;
+            margin: 0 189px;
+        }
     }
     &__description {
         width: 750px;

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODP GROUP</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./styles/prices.scss">
 </head>
 
 <body>
@@ -24,6 +25,9 @@
                         <a class="nav__list--link" href="./gallery.html">Gallery</a>
                     </li>
                     <li class="nav__list--item">
+                        <a class="nav__list--link" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav__list--item">
                         <a class="nav__list--link" href="./priceExamples.html">Price Examples</a>
                     </li>
                     <li class="nav__list--item">
@@ -38,27 +42,22 @@
     </header>
     <section class="banner">
         <div class="banner__logo">
-            <img src="" alt="" />
+            <img class="banner__logo--img" src="./assets/img/main/logo.png" alt="company logo" />
         </div>
-        <div class="banner-main">
-            <img src="" alt="" />
+        <div class="banner__main">
         </div>
         <div class="banner__home">
             <nav>
                 <ul class="banner__list">
                     <li class="banner__list--item">
-                        <a class="banner__list--item banner__list--link" href=""><img src="" alt=""> </a>
+                        <img src="./assets/img/main/aside-nav-home.png" alt="" />
                     </li>
                     <li class="banner__list--item">
-                        <a class="banner__list--item banner__list--link" href="">ODP Group</a>
-                    </li>
-                    <li class="banner__list--item">
-                        <a class="banner__list--item banner__list--link" href="">About odp</a>
+                        <img src="./assets/img/main/aside_nav_buttons.png" alt="" />
                     </li>
                 </ul>
             </nav>
         </div>
-
     </section>
     <section class="text">
         <h1 class="text__title">Price Examples</h1>
@@ -72,71 +71,414 @@
             depending on options.
             But, please read our guide below to find out how much new windows cost.</p>
     </section>
+    <section class="text-content">
+        <p class="text-content__title">
+            Project Overview
+        </p>
+
+        <p class="text-content__description "> text is taken from:
+            https://www.everest.co.uk/double-glazing-windows/new-windows-cost/ </p>
+        <p class="text-content__description">To budget for
+            replacing your old windows, it's important to research how much new windows cost as many factors contribute
+            to the price. As a quick guide, the average price for new windows is anything between £500 to £3,200 per
+            window*, depending on options. But, please read our guide below to find out how much new windows cost.
+
+
+        </p>
+    </section>
     <section class="products">
-        <div class="product">
-            <img src="" alt="" class="product__image">
-            <p class="product__name">casement window 100x100cm</p>
-            <p class="product__price">form <span class="product__price--value">£300</span></p>
-            <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.</p>
-            <button class="product__more">View less details</button>
-            <div class="product__speciall">
-                <div class="product__specaill--item">
-
-                    <p class="product__speciall--title">Frame material</p>
-
-                    <div class="product__speciall-grid--little">
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">uPVC</p>
-                            <p class="product__special--name">Aluminium</p>
-                            <p class="product__special--name">Wood</p>
-                        </div>
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">from £300</p>
-                            <p class="product__special--name">25% more than uPVC</p>
-                            <p class="product__special--name">50% more than uPVC</p>
-                        </div>
-                    </div>
-
+        <div class="product-container--bg">
+            <div class="product">
+                <div class="product__image">
+                    <img src="./assets/img/price-examples/1st_window.png" alt="window" class="product__image--img">
                 </div>
-                <div class="product__specaill--item">
-
-                    <p class="product__speciall--title">Frame color</p>
-
-                    <div class="product__speciall-grid--little">
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">White</p>
-                            <p class="product__special--name">Solid colo</p>
-                            <p class="product__special--name">Wooden efect</p>
-                        </div>
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">from £300</p>
-                            <p class="product__special--name">15% more than white</p>
-                            <p class="product__special--name">10% more than white</p>
-                        </div>
-                    </div>
-
+                <div class="product__info">
+                    <p class="product__name">casement window 100x100cm</p>
+                    <p class="product__price">form <span class="product__price--value">£300</span></p>
+                    <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.
+                    </p>
+                    <button id="more-1" class="product__button product__button--more product__button--more-js">View more
+                        details</button>
+                    <button id="less-1" class="product__button product__button--less product__button--less-js">View more
+                        details</button>
                 </div>
-                <div class="product__specaill--item">
-                    <p class="product__speciall--title">Type of glazing</p>
-                    <div class="product__speciall-grid--little">
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">Double</p>
-                            <p class="product__special--name">Triple</p>
+
+            </div>
+            <div id="special-1" class="product__speciall-container">
+                <div class="product__speciall">
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame material</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">uPVC</p>
+                                <p class="product__speciall--name">Aluminium</p>
+                                <p class="product__speciall--name">Wood</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">25% more than uPVC</p>
+                                <p class="product__speciall--name">50% more than uPVC</p>
+                            </div>
                         </div>
-                        <div class="product__speciall--info">
-                            <p class="product__special--name">from £300</p>
-                            <p class="product__special--name"> 35% more than white</p>
+
+                    </div>
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame color</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">White</p>
+                                <p class="product__speciall--name">Solid colo</p>
+                                <p class="product__speciall--name">Wooden efect</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">15% more than white</p>
+                                <p class="product__speciall--name">10% more than white</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+                        <p class="product__speciall--title">Type of glazing</p>
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">Double</p>
+                                <p class="product__speciall--name">Triple</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name"> 35% more than white</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <p class="product__speciall--description">A casement window is the standard and the oldest style of
                     window in the UK. Hinged at the side (or the top) for opening, usually with a single or pair of
-                    opening windows in one frame. Casement windows in white uPVC are the most economical style of window
+                    opening windows in one frame. Casement windows in white uPVC are the most economical style of
+                    window
                     you can buy.</p>
 
             </div>
 
         </div>
+        <div class="product-container">
+            <div class="product">
+                <div class="product__image">
+                    <img src="./assets/img/price-examples/patio_doors.png" alt="patio dors" class="product__image--img">
+                </div>
+                <div class="product__info">
+                    <p class="product__name">Sash window 100x100cm</p>
+                    <p class="product__price">form <span class="product__price--value">£400</span></p>
+                    <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.
+                    </p>
+                    <button class="product__button product__button--more product__button--more-js">View more
+                        details</button>
+                    <button class="product__button product__button--less product__button--less-js">View more
+                        details</button>
+                </div>
+
+            </div>
+            <div class="product__speciall-container">
+                <div class="product__speciall">
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame material</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">uPVC</p>
+                                <p class="product__speciall--name">Aluminium</p>
+                                <p class="product__speciall--name">Wood</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">25% more than uPVC</p>
+                                <p class="product__speciall--name">50% more than uPVC</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame color</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">White</p>
+                                <p class="product__speciall--name">Solid colo</p>
+                                <p class="product__speciall--name">Wooden efect</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">15% more than white</p>
+                                <p class="product__speciall--name">10% more than white</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+                        <p class="product__speciall--title">Type of glazing</p>
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">Double</p>
+                                <p class="product__speciall--name">Triple</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name"> 35% more than white</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="product__speciall--description">A casement window is the standard and the oldest style of
+                    window in the UK. Hinged at the side (or the top) for opening, usually with a single or pair of
+                    opening windows in one frame. Casement windows in white uPVC are the most economical style of
+                    window
+                    you can buy.</p>
+
+            </div>
+
+        </div>
+        <div class="product-container--bg">
+            <div class="product">
+                <div class="product__image">
+                    <img src="./assets/img/price-examples/roof_windo.png" alt="roof window" class="product__image--img">
+                </div>
+                <div class="product__info">
+                    <p class="product__name">Roof window 100x100cmm</p>
+                    <p class="product__price">form <span class="product__price--value">£400</span></p>
+                    <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.
+                    </p>
+                    <button class="product__button product__button--more product__button--more-js">View more
+                        details</button>
+                    <button class="product__button product__button--less product__button--less-js">View more
+                        details</button>
+                </div>
+
+            </div>
+            <div class="product__speciall-container">
+                <div class="product__speciall">
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame material</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">uPVC</p>
+                                <p class="product__speciall--name">Aluminium</p>
+                                <p class="product__speciall--name">Wood</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">25% more than uPVC</p>
+                                <p class="product__speciall--name">50% more than uPVC</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame color</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">White</p>
+                                <p class="product__speciall--name">Solid colo</p>
+                                <p class="product__speciall--name">Wooden efect</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">15% more than white</p>
+                                <p class="product__speciall--name">10% more than white</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+                        <p class="product__speciall--title">Type of glazing</p>
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">Double</p>
+                                <p class="product__speciall--name">Triple</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name"> 35% more than white</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="product__speciall--description">A casement window is the standard and the oldest style of
+                    window in the UK. Hinged at the side (or the top) for opening, usually with a single or pair of
+                    opening windows in one frame. Casement windows in white uPVC are the most economical style of
+                    window
+                    you can buy.</p>
+
+            </div>
+
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <div class="product__image">
+                    <img src="./assets/img/price-examples/sliding_window.png" alt="sliding window"
+                        class="product__image--img">
+                </div>
+                <div class="product__info">
+                    <p class="product__name">Sliding window 100x100cm</p>
+                    <p class="product__price">form <span class="product__price--value">£400</span></p>
+                    <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.
+                    </p>
+                    <button class="product__button product__button--more product__button--more-js">View more
+                        details</button>
+                    <button class="product__button product__button--less product__button--less-js">View more
+                        details</button>
+                </div>
+
+            </div>
+            <div class="product__speciall-container">
+                <div class="product__speciall">
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame material</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">uPVC</p>
+                                <p class="product__speciall--name">Aluminium</p>
+                                <p class="product__speciall--name">Wood</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">25% more than uPVC</p>
+                                <p class="product__speciall--name">50% more than uPVC</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame color</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">White</p>
+                                <p class="product__speciall--name">Solid colo</p>
+                                <p class="product__speciall--name">Wooden efect</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">15% more than white</p>
+                                <p class="product__speciall--name">10% more than white</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+                        <p class="product__speciall--title">Type of glazing</p>
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">Double</p>
+                                <p class="product__speciall--name">Triple</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name"> 35% more than white</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="product__speciall--description">A casement window is the standard and the oldest style of
+                    window in the UK. Hinged at the side (or the top) for opening, usually with a single or pair of
+                    opening windows in one frame. Casement windows in white uPVC are the most economical style of
+                    window
+                    you can buy.</p>
+
+            </div>
+
+        </div>
+        <div class="product-container--bg">
+            <div class="product">
+                <div class="product__image">
+                    <img src="./assets/img/price-examples/patio_doors.png" alt="patio dors" class="product__image--img">
+                </div>
+                <div class="product__info">
+                    <p class="product__name">Patio doors 200x200cm</p>
+                    <p class="product__price">form <span class="product__price--value">£2000</span></p>
+                    <p class="product__description">Average price for new white UPVC window 100x100cm including fitting.
+                    </p>
+                    <button class="product__button product__button--more product__button--more-js">View more
+                        details</button>
+                    <button class="product__button product__button--less product__button--less-js">View more
+                        details</button>
+                </div>
+
+            </div>
+            <div class="product__speciall-container">
+                <div class="product__speciall">
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame material</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">uPVC</p>
+                                <p class="product__speciall--name">Aluminium</p>
+                                <p class="product__speciall--name">Wood</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">25% more than uPVC</p>
+                                <p class="product__speciall--name">50% more than uPVC</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+
+                        <p class="product__speciall--title">Frame color</p>
+
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">White</p>
+                                <p class="product__speciall--name">Solid colo</p>
+                                <p class="product__speciall--name">Wooden efect</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name">15% more than white</p>
+                                <p class="product__speciall--name">10% more than white</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product__specaill--item">
+                        <p class="product__speciall--title">Type of glazing</p>
+                        <div class="product__speciall--little">
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">Double</p>
+                                <p class="product__speciall--name">Triple</p>
+                            </div>
+                            <div class="product__speciall--info">
+                                <p class="product__speciall--name">from £300</p>
+                                <p class="product__speciall--name"> 35% more than white</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="product__speciall--description">A casement window is the standard and the oldest style of
+                    window in the UK. Hinged at the side (or the top) for opening, usually with a single or pair of
+                    opening windows in one frame. Casement windows in white uPVC are the most economical style of
+                    window
+                    you can buy.</p>
+
+            </div>
+
+        </div>
+
     </section>
     <footer class="footer">
         <div class="footer__copyright">
@@ -161,7 +503,7 @@
     </footer>
 
 
-    <script src="index.js"></script>
+    <script src="priceExamples.js"></script>
 
 </body>
 
