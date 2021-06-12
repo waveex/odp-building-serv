@@ -27,19 +27,47 @@
     }
 }
 .gallery {
-    max-width: 1649px;
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 70px;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "image-1ab image-23a image-23a image-4a image-56ab  image-56ab"
+            "image-1ab image-2b image-3b image-4b  image-56ab  image-56ab"
+            "image-1c image-23cd image-23cd image-6c image-45cd image-45cd  "
+            "image-1d image-23cd image-23cd image-6d image-45cd image-45cd  ";
+    }
     &__title {
+        max-width: 1091px;
+        width: 100%;
+        margin: 0 auto;
+
         font-size: 30px;
         color: #424242;
         font-weight: 300;
         font-family: "Canto";
         filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+        &::after {
+            content: "";
+            height: 1px;
+            background: #4242423b;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    &__image {
+        box-sizing: border-box;
+        transition: all 0.2s linear;
     }
     &__image:hover {
         filter: greyscale(100%);
-        transform: scale(1.1);
+        transform: scale(1.001);
+    }
+    &__link {
+        height: 308px;
+        width: 281.5px;
     }
 }
 
@@ -113,4 +141,44 @@
     &__title {
         padding-top: 35px;
     }
+}
+.image-1ab {
+    grid-area: image-1ab;
+    min-height: 451px;
+}
+.image-1c {
+    grid-area: image-1c;
+}
+.image-1d {
+    grid-area: image-1d;
+}
+.image-2b {
+    grid-area: image-2b;
+}
+.image-3b {
+    grid-area: image-3b;
+}
+.image-4a {
+    grid-area: image-4a;
+}
+.image-4b {
+    grid-area: image-4b;
+}
+.image-6c {
+    grid-area: image-6c;
+}
+.image-6d {
+    grid-area: image-6d;
+}
+.image-23a {
+    grid-area: image-23a;
+}
+.image-23cd {
+    grid-area: image-23cd;
+}
+.image-45cd {
+    grid-area: image-45cd;
+}
+.image-56ab {
+    grid-area: image-56ab;
 }

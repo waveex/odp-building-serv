@@ -8,6 +8,7 @@
     <title>ODP GROUP</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="stylesheet" href="./styles/projects.scss">
+    <link rel="stylesheet" href="./styles/lightgallery.css">
 </head>
 
 <body>
@@ -113,34 +114,34 @@
         <p class="gallery__title">
             Project Gallery
         </p>
-        <div class="gallery__conatiner">
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/1ab.png"><img
-                    src="./assets/img/projects-gallery/full/1ab.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/1c.png"><img
-                    src="./assets/img/projects-gallery/full/1c.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/1d.png"><img
-                    src="./assets/img/projects-gallery/full/1d.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/2b.png"><img
-                    src="./assets/img/projects-gallery/full/2b.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/3b.png"><img
-                    src="./assets/img/projects-gallery/full/3b.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/4a.png"><img
-                    src="./assets/img/projects-gallery/full/4a.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/4b.png"><img
-                    src="./assets/img/projects-gallery/full/4b.png" alt="gallery" class="gallery__image"></a>
+        <div class="gallery__container">
+            <a class="gallery__link image-1ab" href="./assets/img/projects-gallery/full/1ab.png"><img
+                    class="gallery__image " src="./assets/img/projects-gallery/full/1ab.png" alt="gallery"></a>
+            <a class="gallery__link image-1c" href="./assets/img/projects-gallery/full/1c.png"><img
+                    class="gallery__image " src="./assets/img/projects-gallery/full/1c.png" alt="gallery"></a>
+            <a class="gallery__link image-1d" href="./assets/img/projects-gallery/full/1d.png"><img
+                    class="gallery__image   " src="./assets/img/projects-gallery/full/1d.png" alt="gallery"></a>
+            <a class="gallery__link image-2b" href="./assets/img/projects-gallery/full/2b.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/2b.png" alt="gallery"></a>
+            <a class="gallery__link image-3b" href="./assets/img/projects-gallery/full/3b.png"><img
+                    class="gallery__image   " src="./assets/img/projects-gallery/full/3b.png" alt="gallery"></a>
+            <a class="gallery__link image-4a" href="./assets/img/projects-gallery/full/4a.png"><img
+                    class="gallery__image   " src="./assets/img/projects-gallery/full/4a.png" alt="gallery"></a>
+            <a class="gallery__link image-4b" href="./assets/img/projects-gallery/full/4b.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/4b.png" alt="gallery"></a>
 
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/6c.png"><img
-                    src="./assets/img/projects-gallery/full/6c.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/6f.png"><img
-                    src="./assets/img/projects-gallery/full/6f.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/23a.png"><img
-                    src="./assets/img/projects-gallery/full/23a.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/23cd.png"><img
-                    src="./assets/img/projects-gallery/full/23cd.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/45cd.png"><img
-                    src="./assets/img/projects-gallery/full/45cd.png" alt="gallery" class="gallery__image"></a>
-            <a class="gallery__link" href="./assets/img/projects-gallery/full/56ab.png"><img
-                    src="./assets/img/projects-gallery/full/56ab.png" alt="gallery" class="gallery__image"></a>
+            <a class="gallery__link  image-6c" href="./assets/img/projects-gallery/full/6c.png"><img
+                    class="gallery__image" src="./assets/img/projects-gallery/full/6c.png" alt="gallery"></a>
+            <a class="gallery__link image-6d" href="./assets/img/projects-gallery/full/6d.png"><img
+                    class="gallery__image " src="./assets/img/projects-gallery/full/6d.png" alt="gallery"></a>
+            <a class="gallery__link image-23a" href="./assets/img/projects-gallery/full/23a.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/23a.png" alt="gallery"></a>
+            <a class="gallery__link image-23cd" href="./assets/img/projects-gallery/full/23cd.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/23cd.png" alt="gallery"></a>
+            <a class="gallery__link image-45cd" href="./assets/img/projects-gallery/full/45cd.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/45cd.png" alt="gallery"></a>
+            <a class="gallery__link image-56ab" href="./assets/img/projects-gallery/full/56ab.png"><img
+                    class="gallery__image  " src="./assets/img/projects-gallery/full/56ab.png" alt="gallery"></a>
         </div>
 
     </section>
@@ -184,7 +185,13 @@
     </footer>
 
 
-    <script src="index.js"></script>
+    <script src="projects.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery__container'))
+    </script>
+
+
 
 </body>
 
