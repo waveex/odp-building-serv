@@ -1,3 +1,10 @@
+.text__title::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background: #4242423b;
+    margin: 0px 60px;
+}
 .text-content {
     max-width: 1091px;
     width: 100%;
@@ -8,6 +15,13 @@
         font-weight: 300;
         font-family: "Canto";
         filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+        &::after {
+            display: block;
+            content: "";
+            height: 1px;
+            background: #4242423b;
+            width: 10%;
+        }
     }
     &__description {
         font-size: 15px;
@@ -35,6 +49,9 @@
     grid-template-columns: 340px 1fr;
 
     &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &--img {
             max-width: 200px;
             width: 100%;
@@ -87,6 +104,9 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
+        &:hover {
+            color: #3c3c3c;
+        }
         &--more {
             &::after {
                 display: block;
@@ -157,4 +177,69 @@
 
 .hide {
     display: none;
+}
+.product-container--bg .product__speciall-container {
+    padding-bottom: 1px;
+}
+.parallax {
+    margin-top: 60px;
+    max-width: 1920px;
+    width: 100%;
+    background: url(../assets/img/projects-gallery/gallery_slider_bottom.png);
+    min-height: 334px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+        margin-top: 75px;
+        font-size: 36px;
+        color: #fefefe;
+        font-weight: 300;
+        font-family: "Canto";
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    &__description {
+        font-size: 16px;
+        color: #fefefe;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+    &__button {
+        width: 183px;
+        height: 50px;
+        font-size: 21px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: center;
+        text-decoration: none;
+        background: #29b4c9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.projects {
+    max-width: 1091px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        color: #424242;
+        font-weight: 300;
+        font-family: "Canto";
+        filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+        width: 100%;
+        border-bottom: 1px solid #4242423b;
+    }
+    &__images {
+        &--img {
+            margin-right: 1px;
+        }
+    }
 }

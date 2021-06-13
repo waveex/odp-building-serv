@@ -15,6 +15,14 @@
         font-weight: 300;
         font-family: "Canto";
         filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.54));
+        &::after {
+            display: block;
+            content: "";
+            height: 1px;
+            background: #4242423b;
+            margin: 0px 0;
+            width: 12%;
+        }
     }
     &__description {
         font-size: 15px;
@@ -64,10 +72,6 @@
     &__image:hover {
         filter: greyscale(100%);
         transform: scale(1.001);
-    }
-    &__link {
-        height: 308px;
-        width: 281.5px;
     }
 }
 
@@ -129,7 +133,7 @@
     }
     &__images {
         &--img {
-            margin-right: 35px;
+            margin-right: 1px;
         }
     }
 }
@@ -144,7 +148,10 @@
 }
 .image-1ab {
     grid-area: image-1ab;
-    min-height: 451px;
+}
+.image-1ab .gallery__image {
+    width: 95%;
+    height: 90%;
 }
 .image-1c {
     grid-area: image-1c;

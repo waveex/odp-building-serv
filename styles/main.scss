@@ -4,7 +4,7 @@ body {
     font-family: "canto", serif;
     font-size: 16px;
     background: #fff;
-    margin: 0;
+    margin: 0 auto;
     max-width: 1920px;
     width: 100%;
 }
@@ -17,6 +17,7 @@ textarea {
     max-width: 1920px;
     width: 100%;
     display: flex;
+    border-top: 1px solid #d7d7d7;
     &__main {
         max-width: 1648px;
         width: 100%;
@@ -42,7 +43,6 @@ textarea {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 20px;
     }
     &__logo {
         margin: 35px 20px;
@@ -51,8 +51,11 @@ textarea {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid #d7d7d7;
+    justify-content: space-between;
+    max-width: 1648px;
+    margin: 0 auto;
+    width: 100%;
+
     &__company--name {
         font-size: 36px;
         color: #616161;
@@ -225,6 +228,9 @@ textarea {
             font-weight: 400;
             font-family: "Roboto";
             border: none;
+            &:hover {
+                background: #29b4c9;
+            }
         }
 
         &--label {
@@ -264,6 +270,7 @@ textarea {
         }
         &--link {
             color: #5dc6d6;
+            text-decoration: none;
             &:hover {
                 text-decoration: underline;
             }
@@ -276,6 +283,9 @@ textarea {
             background-color: #29b4c9;
             border: none;
             color: #fff;
+            &:hover {
+                background: #75bdc8;
+            }
         }
     }
 }
@@ -336,4 +346,7 @@ textarea {
             height: fit-content;
         }
     }
+}
+.parallax__button:hover {
+    background: #29b4c9ed;
 }
