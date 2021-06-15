@@ -1,7 +1,22 @@
-// w html musisz dodać: <p id="errorParagraph"></p>
+var fileInput = document.querySelector("input[type=file]");
+var filenameContainer = document.querySelector("#filename");
+var dropzone = document.querySelector(".files");
+
+fileInput.addEventListener("change", function () {
+  filenameContainer.innerText = fileInput.value.split("\\").pop();
+});
+
+fileInput.addEventListener("dragenter", function () {
+  dropzone.classList.add("dragover");
+});
+
+fileInput.addEventListener("dragleave", function () {
+  dropzone.classList.remove("dragover");
+});
+
 const validateForm = () => {
   const errorParagraph = document.getElementById("errorParagraph");
-  // wymagane pola trzeba uzupełnić, to tylko przykład
+
   const requiredFieldsIds = ["location", "sector", "description", "email"];
 
   const erroredFileds = requiredFieldsIds.map((fieldId) => {
@@ -70,9 +85,4 @@ form.addEventListener("submit", (event) => {
   console.log("peyload");
   console.log(handleSubmitForm());
   handleSubmitForm();
-});
-
-const file = document.getElementById("file");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
 });

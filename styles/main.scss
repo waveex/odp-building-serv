@@ -374,3 +374,24 @@ textarea {
     background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
         url(/assets/img/projects-gallery/gallery_slider_bottom.png) !important;
 }
+input[type="file"] {
+    position: relative;
+    left: 0;
+    opacity: 0;
+    top: -25px;
+    bottom: 0;
+    width: 150px;
+    height: 35px;
+}
+.files {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+    position: relative;
+    top: -16px;
+}

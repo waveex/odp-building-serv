@@ -28,7 +28,7 @@
                         <a class="nav__list--link" href="./projects.html">Projects</a>
                     </li>
                     <li class="nav__list--item">
-                        <a class="nav__list--link" href="./priceExamples.html">Price Examples</a>
+                        <a class="nav__list--link" href="./priceExamplesMain.html">Price Examples</a>
                     </li>
                     <li class="nav__list--item">
                         <a class="nav__list--link" href="#">Bitcoin</a>
@@ -40,6 +40,7 @@
             </nav>
         </div>
     </header>
+
     <section class="banner">
         <div class="banner__logo">
             <img class="banner__logo--img" src="./assets/img/main/logo.png" alt="company logo" />
@@ -82,8 +83,8 @@
                         <input type="email" class="contact__data--input" name="email" id="email">
                     </div>
                     <div class="contact__data--item contact__data--phone">
-                        <label for="phone" class="contact__data--label">Full name:</label>
-                        <input type="tel" class="contact__data--input" name="phone" id="phone">
+                        <label for="phone" class="contact__data--label">Full name:<z /label>
+                                <input type="tel" class="contact__data--input" name="phone" id="phone">
                     </div>
 
                 </div>
@@ -96,15 +97,11 @@
                         <p class="contact__file--title">Images of task or query:</p>
                         <form name="uploadForm" class="contact__file--form">
                             <label for="file" class="contact__file--label">Drop files here or </label>
-                            <!-- <div>
-
-                                        <input id="uploadInput" class="contact__file--button contact__file--upload" type="file"
-                                            value="Select file" name="myFiles" multiple>
-                                        total size: <span id="fileSize">0</span>
-                                    </div> -->
-                            <div><input type="submit" id="file" class="contact__file--button contact__file--send"
-                                    value="Send files">
-                            </div>
+                            <label for="file" class="contact__file--button contact__file--send">
+                                <p class="files">Send files</p>
+                                <input type="file" id="file">
+                            </label>
+                            <p id="filename"></p>
                         </form>
                     </div>
                 </div>
@@ -121,7 +118,7 @@
                     class="contact__permission--link">terms and conditions</a></label>
         </div>
         <div class="contact__submit">
-            <button type="submit" class="contact__submit--button">Submit</button>
+            <button type="submit" id="myForm" class="contact__submit--button">Submit</button>
         </div>
 
 
@@ -161,7 +158,7 @@
     </footer>
 
 
-    <script src="index.js"></script>
+    <script src="contact.js"></script>
 
 </body>
 
