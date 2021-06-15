@@ -219,8 +219,7 @@ textarea {
             display: flex;
         }
         &--button {
-            max-width: 150px;
-            width: 100%;
+            width: 150px;
             height: 35px;
             background: #75bdc8;
             font-size: 18px;
@@ -316,24 +315,45 @@ textarea {
 .footer {
     margin-top: 100px;
     background: #434343;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+    &__container {
+        max-width: 1091px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 1px;
+            max-width: 1091px;
+            width: 100%;
+            margin: 0 auto;
+            background: #525252;
+            margin-top: 15px;
+        }
+    }
     &__copyright--text {
         font-size: 15px;
-        color: #ffffff;
+        color: #797979;
         font-weight: 300;
         font-family: "Roboto";
+        margin-top: 30px;
+        margin-bottom: 35px;
     }
     &__list {
         list-style: none;
         display: flex;
         flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 35px;
 
         &--link {
             text-decoration: none;
             font-size: 15px;
-            color: #ffffff;
+            color: #797979;
             font-weight: 300;
             font-family: "Roboto";
             padding: 0 10px;
@@ -342,7 +362,7 @@ textarea {
             }
         }
         &--line {
-            border-right: 1px solid #fff;
+            border-right: 1px solid #797979;
             height: fit-content;
         }
     }
