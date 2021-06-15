@@ -111,11 +111,8 @@
     font-family: "Roboto";
     text-align: center;
     user-select: none;
-    opacity: 0;
-    transition: 0.25s cubic-bezier(0.68, 0.26, 0.58, 1.22);
-}
-#image-comparison-slider:hover .label {
     opacity: 1;
+    transition: 0.25s cubic-bezier(0.68, 0.26, 0.58, 1.22);
 }
 
 #image-comparison-slider .label.label-after {
@@ -145,7 +142,8 @@
     width: var(--image-comparison-slider-handle-width);
     height: var(--image-comparison-slider-handle-width);
     color: #fff;
-
+    border: 1px solid;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

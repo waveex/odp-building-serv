@@ -80,6 +80,7 @@ textarea {
             color: #9f9f9f;
             font-weight: 200;
             text-transform: uppercase;
+
             &:hover {
                 font-weight: 300;
                 color: #3c3c3c;
@@ -341,14 +342,14 @@ textarea {
         font-weight: 300;
         font-family: "Roboto";
         margin-top: 30px;
-        margin-bottom: 35px;
+        margin-bottom: 29px;
     }
     &__list {
         list-style: none;
         display: flex;
         flex-direction: row;
         margin-top: 30px;
-        margin-bottom: 35px;
+        margin-bottom: 29px;
 
         &--link {
             text-decoration: none;
@@ -393,5 +394,12 @@ input[type="file"] {
     font-family: "Roboto";
     text-align: center;
     position: relative;
-    top: -16px;
+    top: -11px;
+}
+.projects__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projects__images--img {
+    width: 99%;
 }

@@ -33,6 +33,15 @@
         font-family: "Roboto";
         text-align: left;
     }
+    &__link {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        color: #474747;
+        font-weight: 300;
+        font-family: "Roboto";
+        text-align: left;
+    }
 }
 .gallery {
     margin: 0 70px;
@@ -40,7 +49,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
         grid-template-areas:
             "image-1ab image-23a image-23a image-4a image-56ab  image-56ab"
             "image-1ab image-2b image-3b image-4b  image-56ab  image-56ab"
@@ -70,8 +78,7 @@
         transition: all 0.2s linear;
     }
     &__image:hover {
-        filter: greyscale(100%);
-        transform: scale(1.001);
+        filter: blur(2px);
     }
 }
 
@@ -138,6 +145,10 @@
     }
 }
 
+.gallery__image {
+    min-width: 281px;
+    min-height: 232.5px;
+}
 .text {
     top: -231px;
     margin-bottom: -201px;
@@ -149,10 +160,7 @@
 .image-1ab {
     grid-area: image-1ab;
 }
-.image-1ab .gallery__image {
-    width: 95%;
-    height: 90%;
-}
+
 .image-1c {
     grid-area: image-1c;
 }
@@ -188,4 +196,26 @@
 }
 .image-56ab {
     grid-area: image-56ab;
+}
+.image-1ab .gallery__image {
+    width: 281px;
+    height: 474px;
+}
+.image-23a .gallery__image {
+    width: 575px;
+    height: 224px;
+}
+.image-45cd .gallery__image,
+.image-23cd .gallery__image,
+.image-56ab .gallery__image {
+    width: 575px;
+    height: 474px;
+}
+.image-6d .gallery__image {
+    width: 271px;
+    height: 224px;
+}
+
+.footer {
+    margin-top: 45px;
 }
