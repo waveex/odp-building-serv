@@ -46,9 +46,12 @@ main {
     align-items: center;
     position: absolute;
 }
-.firma:hover ~ #bird {
-    opacity: 0.5;
+.company__link:hover ~ .bird__link,
+.company__link:hover ~ .globe__link {
+    animation: pale 1s forwards ease-in-out;
+    animation-iteration-count: 1;
 }
+
 @keyframes pale {
     from {
         opacity: 1;
