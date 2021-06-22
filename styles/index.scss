@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+main {
+    min-height: 100%;
+    background: url(../assets/img/ODP-home-01Cs.png);
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+}
+.banner {
+    justify-content: space-between;
+    position: absolute;
+    &__list {
+        padding-inline-start: 0;
+        margin-right: 70px;
+        margin-top: 75px;
+    }
+}
+.footer {
+    position: absolute;
+
+    background: #000000d1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer__container::before {
+    background: #5252525c;
+    margin-top: 8px;
+}
+.footer__list,
+.footer__copyright--text {
+    margin-top: 16.5px;
+    margin-bottom: 10px;
+}
+.shield {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.firma:hover ~ #bird {
+    opacity: 0.5;
+}
+@keyframes pale {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
