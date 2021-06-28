@@ -83,3 +83,7 @@ main {
     align-items: inherit;
     opacity: 0;
 }
+#globe-group path,
+#company path {
+    pointer-events: bounding-box;
+}
