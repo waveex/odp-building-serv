@@ -13,7 +13,9 @@ body {
 textarea {
     resize: none;
 }
-
+ul {
+    padding-inline-start: 0;
+}
 /******************header*****************/
 .banner {
     max-width: 1920px;
