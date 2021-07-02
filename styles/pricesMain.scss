@@ -113,6 +113,7 @@
         display: grid;
         grid-template-rows: 1fr 320px;
         grid-template-columns: max-content;
+        margin-bottom: 40px;
 
         &__image {
             display: flex;
@@ -126,6 +127,8 @@
         }
         &::after {
             width: 100%;
+
+            margin-top: 0px;
         }
         &__text {
             display: flex;
@@ -144,6 +147,13 @@
     .categorie__description {
         max-width: 425px;
         text-align: justify;
+    }
+    .categorie__title {
+        text-align: center;
+    }
+    .categorie__title::after {
+        width: 60%;
+        margin: 0 auto;
     }
 }
 

@@ -655,7 +655,30 @@ input[type="file"] {
         float: right;
     }
 }
-@media (max-width: 676px) {
+@media screen and (max-width: 768px) {
+    .banner__main {
+        height: 134px;
+    }
+    .text-content__title {
+        max-width: 450px;
+        text-align: center;
+    }
+    .text-content__title::after {
+        width: 60% !important;
+        margin: 0 auto !important;
+    }
+    .text {
+        top: 0 !important;
+        margin-bottom: -40px !important;
+        position: inherit;
+        min-height: 77px !important;
+    }
+    .text__title::after {
+        margin: 0 auto !important;
+        width: 25%;
+    }
+}
+@media (max-width: 767px) {
     .banner__main--text {
         display: none;
     }

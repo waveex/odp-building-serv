@@ -57,3 +57,42 @@ input[type="file"] {
     font-family: "Roboto";
     text-align: center;
 }
+@media (max-width: 1200px) {
+    .contact-page .contact__data--input {
+        max-width: 360px;
+    }
+}
+@media (max-width: 991px) {
+    .contact-page .contact__data--input {
+        max-width: 270px;
+    }
+    .map {
+        max-width: 610px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-page .contact__data--input {
+        max-width: 100%;
+    }
+    .contact__permission {
+        margin-top: -70px;
+    }
+    .map {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map {
+        max-width: 300px;
+    }
+    .contact-page .text__description {
+        max-width: 380px;
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .contact {
+        max-width: 280px;
+    }
+}

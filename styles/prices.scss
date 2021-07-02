@@ -9,7 +9,7 @@
     content: "";
     height: 1px;
     background: #4242423b;
-    margin: 0px 60px;
+    margin: 0px auto;
 }
 .text-content {
     max-width: 1091px;
@@ -247,4 +247,95 @@
 }
 .morePlus:hover {
     color: #3c3c3c;
+}
+@media screen and (max-width: 1200px) {
+    .text-content {
+        max-width: 825px;
+    }
+    .product {
+        max-width: 825px;
+    }
+    .product__speciall-container {
+        max-width: 825px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .text-content {
+        max-width: 610px;
+    }
+    .product {
+        max-width: 610px;
+    }
+    .product__speciall-container {
+        max-width: 610px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .text {
+        top: 0 !important;
+        margin-bottom: -80px !important;
+        position: inherit;
+        min-height: 77px !important;
+    }
+    .text-content {
+        max-width: 450px;
+        text-align: center;
+    }
+    .text-content__title::after {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
+    }
+    .product__image {
+        margin-top: 20px;
+    }
+    .product__name {
+        font-size: 18px;
+    }
+    .product__price {
+        font-size: 14px;
+    }
+    .product__price--value {
+        font-size: 20px;
+    }
+    .product__button {
+        margin-top: 35px;
+    }
+    .morePlus {
+        margin-top: 0;
+    }
+    .product__speciall {
+        display: flex;
+        flex-direction: column;
+    }
+    .product__speciall-container {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .projects {
+        display: none;
+    }
+}
+@media screen and (max-width: 485px) {
+    .text-content {
+        max-width: 310px;
+    }
+    .product {
+        max-width: 310px;
+    }
+
+    .product__speciall-container {
+        max-width: 310px;
+    }
+    .text-content__title {
+        font-size: 24px;
+    }
 }
