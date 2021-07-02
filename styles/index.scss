@@ -149,6 +149,15 @@ main {
         flex-direction: column;
     }
 }
+@media (max-width: 550px) {
+    .image__text {
+        opacity: 1;
+        bottom: 230px;
+        transition: 0.9s forwards ease-in-out;
+        position: relative;
+        font-size: 45px;
+    }
+}
 @media (max-width: 485px) {
     .footer__container::before {
         display: none;
