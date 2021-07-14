@@ -299,11 +299,11 @@
             "image-45cd  image-45cd image-45cd  image-45cd image-45cd  image-45cd";
     }
 }
-@media (min-width: 769px) {
-    .more {
-        display: none;
-    }
+
+.more {
+    display: none;
 }
+
 @media (max-width: 768px) {
     .text {
         top: 0 !important;
