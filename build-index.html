@@ -84,7 +84,7 @@
                 <div class="contact__select">
                     <div class="select">
                         <label for="location" class="select__label">Location: *</label>
-                        <select name="location" class="select__list" id="location">
+                        <select name="location" class="select__list" id="location" required>
                             <option class="select__item" value="">--Please choose an option--</option>
                             <option class="select__item" value="Hampshire">Hampshire</option>
                             <option class="select__item" value="Surrey">Surrey</option>
@@ -95,7 +95,7 @@
 
                         <div class="select">
                             <label for="sector" class="select__label">Sector: *</label>
-                            <select name="sector" class="select__list" id="sector">
+                            <select name="sector" class="select__list" id="sector" required>
                                 <option class="select__item" value="">--Please choose an option--</option>
                                 <option class="select__item" value="Hampshire">Hampshire</option>
                                 <option class="select__item" value="Surrey">Surrey</option>
@@ -110,8 +110,8 @@
                 <div class="contact__message">
                     <label class="contact__message--label" for="description">Describe what you need asiststance with few
                         words: * </label>
-                    <textarea class="contact__message--textarea" name="description" id="description" cols="30"
-                        rows="4"></textarea>
+                    <textarea class="contact__message--textarea" name="description" id="description" cols="30" rows="4"
+                        required></textarea>
                 </div>
             </div>
             <div class="contact__form--row">
@@ -149,7 +149,7 @@
 
                         <label For="file" class="contact__file--button contact__file--send">
                             <p class="files">Send files</p>
-                            <input type="file" id="file" />
+                            <input type="file" id="file" multiple />
                         </label>
                         <p id="filename"> </p>
 
@@ -167,7 +167,7 @@
                 </div>
                 <div class="contact__data--item contact__data--email">
                     <label for="email" class="contact__data--label">Your email:</label>
-                    <input type="email" class="contact__data--input" name="email" id="email">
+                    <input type="email" class="contact__data--input" name="email" id="email" required>
                 </div>
                 <div class="contact__data--item contact__data--phone">
                     <label for="phone" class="contact__data--label">Phone:</label>

@@ -2,8 +2,19 @@ var fileInput = document.querySelector("input[type=file]");
 var filenameContainer = document.querySelector("#filename");
 var dropzone = document.querySelector("div");
 
+// function validateSize(fileInput) {
+//   const fileSize = fileInput.file[0].size / 1024 / 1024; // in MiB
+//   if (fileSize > 2) {
+//     alert("File size exceeds 2 MiB");
+//     // $(file).val(''); //for clearing with Jquery
+//   } else {
+//     // Proceed further
+//   }
+// }
+
 fileInput.addEventListener("change", function () {
   filenameContainer.innerText = fileInput.value.split("\\").pop();
+  // validateSize();
 });
 
 fileInput.addEventListener("dragenter", function () {
@@ -15,7 +26,7 @@ fileInput.addEventListener("dragleave", function () {
 });
 
 const validateForm = () => {
-  const errorParagraph = document.getElementById("errorParagraph");
+  const errorParagraph = document.getElementById("#errorParagraph");
 
   const requiredFieldsIds = ["location", "sector", "description", "email"];
 

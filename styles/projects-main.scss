@@ -1,3 +1,11 @@
 .text__title::after {
-    margin: 0 69px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .text {
+        top: 0 !important;
+        margin-bottom: -150px !important;
+        position: inherit;
+        min-height: 77px !important;
+    }
 }
