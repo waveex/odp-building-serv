@@ -103,24 +103,19 @@
                         rows="4"></textarea>
                     <div class="contact__file">
                         <p class="contact__file--title">Images of task or query:</p>
-                        <form name="uploadForm" class="contact__file--form">
+                        <div class="contact__file--form">
                             <label for="file" class="contact__file--label">Drop files here or </label>
                             <label for="file" class="contact__file--button contact__file--send">
                                 <p class="files">Send files</p>
                                 <input type="file" id="file">
                             </label>
                             <p id="filename"></p>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
 
-
-        </form>
-
-
-
-        <div class="contact__permission">
+ <div class="contact__permission">
             <input type="checkbox" id="checkbox" name="agree" class="contact__permission--input">
             <label class="contact__permission--label" for="checkbox">I have read and agree to the <a href="#"
                     class="contact__permission--link">terms and conditions</a></label>
@@ -128,6 +123,11 @@
         <div class="contact__submit">
             <button type="submit" id="myForm" class="contact__submit--button">Submit</button>
         </div>
+        </form>
+
+
+
+
 
 
         <p class="contact__description">Please feel free to request third party testimonials in any sector your
